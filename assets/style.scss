@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+Bhaijaan+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+// variables
+$color1: #1df8b2;
+$color2: #005899;
+$color3: #2bdca4db;
+$color4: #fff;
+$color5: #000;
+$color6: #333;
+$color7: #0066ff;
+$font1: cursive;
+$font2: 'DynaPuff';
+$size1: 50px;
+$size2: 45px;
+$size3: 35px;
+$size4: 30px;
+$size5: 25px;
+$size6: 20px;
+$ancho: 100%;
+// html
+html{
+    scroll-behavior: smooth;
+}
+// css body
+body{
+    background-color: $color1;
+    h2{
+        background-color: $color2;
+        text-align: center;
+        color: $color1;
+        font-size: $size2;
+        font-family: 'Amaranth', sans-serif;
+        padding: 10px;
+        margin: 0px;
+    }
+}
+// barra de scroll
+body::-webkit-scrollbar{
+    width: 7px;
+    // background-color: #005899;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #005899;
+    height: 300px;
+    border-radius: 5px;
+}
+// css barra navegacion
+.bgnav{
+    background-color: $color2;
+    background-image: linear-gradient(45deg, #005899 0%, #005899 33%, #005899 66%, #1df8b2 100%);
+}
+.nav-link{
+    color: $color1 !important;
+    text-shadow: 0 0 5px $color6;
+    font-size: 22px;
+    padding: 20px !important;
+    font-weight: 500;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.navbar-brand{
+    content: url(./img/logomarvarsnacks.png);
+    display: flex;
+    justify-content: center !important;
+}
+.navbar-dark{
+    background-color: $color2;
+}
+// Carrito
+.carrito{
+    background-color: $color1;
+    border-radius: 50%;
+    margin: 15px;
+    padding: 10px 10px;
+}
+// jumbotron bunner
+.jumbotron{
+    background-image: url(./img/fondo.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: $color1;
+    border-radius: 0;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 0 0 10px $color5;
+    h1{
+        font-size: $size1;
+        font-family: 'Amaranth', sans-serif;
+    }
+    p{
+        font-size: $size3;
+        font-family: 'Amaranth', sans-serif;
+    }
+}
+// css botones
+.btn-primary{
+    background-color: $color2;
+    color: $color1;
+    font-size: $size6;
+    font-family: 'Amaranth', sans-serif;
+    .btn-primary:hover{
+        background-color: $color7;
+    }
+}
+.container-fluid { 
+    overflow: hidden;
+}
+// css aside izq index.html
+.al{
+    padding: 0;
+    content: url(../assets/img/camionmarvar.png);
+    border: groove 4px $color2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: $ancho;
+    height: 100vh;
+    animation: rebotar;
+    animation-duration: 10s;
+    @keyframes rebotar{
+        0%{
+            opacity: 0;
+        }
+        1%{
+            transform: translateY(150px);
+            box-shadow: 0px 10px 10px 10px #000;
+        }
+    }
+}
+// css aside der index.html
+.ar{
+    color: $color2;
+    h3{
+        text-align: center;
+        color: $color2;
+        font-size: $size3;
+        font-weight: bold;
+        font-family: 'Amaranth', sans-serif;
+    }
+    p{
+        font-size: $size6;
+        font-weight: bold;
+        text-align: left;
+        font-family: 'Amaranth', sans-serif;
+    }
+    p::selection{
+        color: $color2;
+        background-color: $color5;
+    }
+}
+// ubicacion index.html
+.map{
+    width: $ancho;
+    height: 50vh;
+    margin: 0px;
+}
+// contrastes de selection
+h1::selection{
+    color: $color1;
+    background-color: $color5;
+}
+h2::selection{
+    color: $color1;
+    background-color: $color5;
+}
+h3::selection{
+    color: $color1;
+    background-color: $color5;
+}
+h4::selection{
+    color: $color2;
+    background-color: $color5;
+}
+label::selection{
+    color: $color2;
+    background-color: $color5;
+}
+p::selection{
+    color: $color2;
+    background-color: $color5;
+}
+.row{
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+}
+
+// card img productos.html
+.card{
+    background-color: $color1;
+    padding: 0%;
+    text-align: center;
+    margin: 0px;
+    margin-top: 0px;
+    .card-body{
+        margin: 0;
+    }
+    h5{
+        color: $color2;
+        font-weight: 500;
+        font-size: $size5;
+        text-align: center;
+        font-family: 'Amaranth', sans-serif;
+    }
+    p{
+        color: $color2;
+        font-weight: 500;
+        font-size: $size6;
+        text-align: center;
+        font-family: 'Amaranth', sans-serif;
+    }
+    .logos{
+        height: 50vh;
+        width: $ancho;
+        animation: rebotar;
+        animation-duration: 10s;
+        @keyframes rebotar{
+            0%{
+                opacity: 0;
+            }
+            1%{
+                transform: translateY(150px);
+                box-shadow: 0px 10px 10px 10px #000;
+            }
+        }
+    }
+    .krach{
+        padding: 10vh;
+        height: 60vh;
+        width: auto;
+        display: flex;
+        align-self: center;
+    }
+    .krach:hover{
+        transform: rotateZ(20deg);
+        transition: all 0.8s;
+    }
+    .hispanos:hover{
+        transform: rotateZ(20deg);
+        transition: all 0.8s;
+    }
+    .macritas:hover{
+        transform: scale(1.1);
+        transition: all 0.8s;
+    }
+    .arrocitas:hover{
+        transform: scale(1.1);
+        transition: all 0.8s;
+    }
+    .natura{
+        padding: 20px;
+        height: 40vh;
+        width: auto;
+        display: flex;
+        align-self: center;
+    }
+    .natura:hover{
+        transform: rotateZ(20deg);
+        transition: all 0.8s;
+        height: 30vh;
+        display: flex;
+        align-self: center;
+    }
+    .crisjor{
+        padding: 70px;
+        height: 60vh;
+        width: auto;
+        display: flex;
+        align-self: center;
+    }
+    .crisjor:hover{
+        transform: scale(1.1);
+        transition: all 0.8s;
+    }
+
+    .inysa{
+        padding: 10vh;
+        width: auto;
+        height: 40vh;
+        display: flex;
+        align-self: center;
+    }
+    .inysa:hover{
+        transform: rotateZ(20deg);
+        transition: all 0.8s;
+    }
+    .sol{
+        padding: 10vh;
+        height: 60vh;
+        width: auto;
+    }
+    .sol:hover{
+        transform: scale(1.1);
+        transition: all 0.8s;
+    }
+}
+// Modal Carrito
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: $color1;
+    background-color: $color2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: $color1;
+    color: $color2;
+    width: 100%;
+}
+.modal-header-title{
+    justify-self: start;
+}
+.modal-header-button{
+    cursor: pointer;
+}
+.modal-container > .modal-content{
+    background-color: $color2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+    .card-text{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+.modal-container > div > img{
+    height:  10%;
+    width: 10%;
+}
+.total-content{
+    background-color: $color2;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 20px;
+}
+.delete-product{
+    cursor: pointer;
+}
+// Cantidad carrito
+.cantidad-carrito{
+    background-color: red;
+    color: $color4;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
+.sumar{
+    cursor: pointer;
+}
+.restar{
+    cursor: pointer;
+}
+// aside left contactos.html
+.alcon{
+    padding: 0px;
+    .contacto{
+    padding: 0px;
+    width: $ancho;
+    height: 30em;
+    background-position: center;
+    background-size: cover;
+    animation: rebotar;
+    animation-duration: 10s;
+    
+        @keyframes rebotar{
+            0%{
+                opacity: 0;
+            }
+            1%{
+                transform: translateY(150px);
+                box-shadow: 0px 10px 10px 10px #000;
+            }
+        }
+    }
+    // ubicacion pag contacto.html
+    .ubicacion{
+        padding: 50px;
+        color: $color2;
+        font-family: 'Amaranth', sans-serif;
+        p{
+            font-size: $size6;
+        }    
+        .icon{
+        font-size: $size6;
+        display: inline-block;
+        }
+        .map{
+        padding: 0px;
+        width: $ancho;
+        height: 70vh;
+        border: groove $color2 5px !important;
+        }
+        h3{
+            @extend h2 ;
+            font-size: $size3 !important;
+        }
+    }
+}
+// aside right contacto.html
+.arcon{
+    color: $color2;
+    font-weight: 600;
+    h3{
+        text-align: center;
+        font-family: 'Amaranth', sans-serif;
+        font-weight: bold;
+        font-size: $size3;
+    }
+    p{
+        text-align: left;
+        font-family: 'Amaranth', sans-serif;
+        font-size: $size4;
+    }
+}
+// formulario contacto.html
+.form-contacto{
+    margin: 50px;
+    font-size: $size6;
+    color: $color2 !important;
+    .form-control{
+        width: 100%;
+        height: 8vh;
+        font-size: 24px;
+        color: $color2;
+    }
+    textarea{
+        width: $ancho;
+        color: $color2;
+    }
+    input{
+        color: $color2;
+    }
+}
+
+//extends 
+.alser{
+    padding: 0%;
+    content: url(./img/servicios.jpg);
+        width: $ancho;
+        background-position: center;
+        background-size: cover;
+        animation: rebotar;
+        animation-duration: 10s;
+        @keyframes rebotar{
+            0%{
+                opacity: 0;
+            }
+            1%{
+                transform: translateY(150px);
+                box-shadow: 0px 10px 10px 10px #000;
+            }
+        }
+    }
+.arser{
+    @extend .arcon;
+    }
+// form iniciar sesion
+.form-is{
+    padding: 10%;
+}
+.form-group{
+    color: $color2;
+    font-weight: bold;
+    font-family: 'Amaranth', sans-serif;
+    font-size: $size4;
+}
+.form-control{
+    width: 80%;
+}
+// css footer 
+footer{
+    background-color: $color1;
+    background-image: linear-gradient(155deg, $color1 0%, #0066ff 50%, #0066ff 100%);
+    width: $ancho;
+    text-align: center;    
+    color: #1effb8;
+    font-size: $size6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    padding: $size5;
+}
+.logomarvar:hover{
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
+.grupo-1{
+    width: $ancho;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 45px 0px;
+    .box{
+    width: $ancho;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        h3{
+            letter-spacing: 2px;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+    }
+    // redes sociales
+    .redes{
+    font-size: $size3;
+    padding-left: 150px;
+    letter-spacing: 8px;
+    line-height: 60px;
+        a{
+            color: $color1;
+        }
+        a:hover{
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.8s;
+        }
+    }
+    .grupo-2{
+        padding: 15px 10px;
+        text-align: center;
+    }
+}
+
+
+// boton subir
+.subir{
+    height: 45px;
+    width: 45px;
+    background-color: $color2;
+    color: $color1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 2px solid $color5;
+    font-size: 22px;
+}
+.subir:hover{
+    color: #fff;
+}
+@media screen and (min-width:1200px){    
+    .inysa{
+        height: 30vh;
+    }
+}
+@media screen and (max-width:992px){    
+    .logos{
+        height: 40vh;
+    }
+    .krach{
+        height: 90vh;
+    }
+    .crisjor{
+        height: 70vh;
+    }
+    .contacto{
+        height: 25em;
+    }
+    .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 0px;
+        text-align: center;
+        .box{
+            padding-left: 40px;
+            padding-top: 20px;
+        }
+        .redes{
+            padding-left: 15px;
+            padding-top: 35px;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .nav-link{
+        font-size: 16px;
+        padding: 15px !important;
+    }
+    .al{
+        height: 90vh;
+    }
+    .card{
+        .krach{
+            height: 60vh;
+            width: auto;
+        }
+    }
+    .contacto{
+        height: 25em;
+    }
+    .alcon{
+        display: flex;
+        flex-direction: column;
+        .ubicacion{
+            padding: 10px;
+            margin: 0px;
+        }
+        .map{
+        margin: 0%;
+        height: 50vh;
+        width: $ancho;
+        }
+    }
+    .alser{
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 576px) {
+    .al{
+        height: 60vh;
+    }
+    .card{
+        .logos{
+            height: 60vh;
+        }
+        .krach{
+            height: 60vh;
+            width: auto;
+        }
+        .crisjor{
+            height: 80vh;
+        }
+        .inysa{
+            height: 50vh;
+        }
+        .sol{
+            padding: 100px;
+            height: 90vh;
+            width: auto;
+        }
+    }
+    .contacto{
+        height: 18em;
+    }
+    .map{
+        height: 45vh;
+    }
+    .alser{
+        height: 80vh;
+    }
+}
+@media screen and (max-width: 320px){
+    .al{
+        height: 50vh;
+    }
+    .card{
+        .krach{
+            height: 50vh;
+            width: auto;
+        }
+        .crisjor{
+            height: 70vh;
+        }
+        .inysa{
+            height: 40vh;
+        }
+        .sol{
+            height: 70vh;
+        }
+    }
+    .contacto{
+        height: 16em;
+    }
+    .ubicacion{
+        .icon{
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            font-size: 18px !important;
+        }    
+        .map{
+            height: 40vh;
+        }
+    }
+    .alser{
+        height: 60vh;
+    }
+}

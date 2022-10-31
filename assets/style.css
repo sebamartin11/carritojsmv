@@ -1,0 +1,749 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+Bhaijaan+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1df8b2;
+}
+body h2, body .alcon .ubicacion h3, .alcon .ubicacion body h3 {
+  background-color: #005899;
+  text-align: center;
+  color: #1df8b2;
+  font-size: 45px;
+  font-family: "Amaranth", sans-serif;
+  padding: 10px;
+  margin: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #005899;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.bgnav {
+  background-color: #005899;
+  background-image: linear-gradient(45deg, #005899 0%, #005899 33%, #005899 66%, #1df8b2 100%);
+}
+
+.nav-link {
+  color: #1df8b2 !important;
+  text-shadow: 0 0 5px #333;
+  font-size: 22px;
+  padding: 20px !important;
+  font-weight: 500;
+  font-family: "Amaranth", sans-serif;
+}
+
+.navbar-brand {
+  content: url(./img/logomarvarsnacks.png);
+  display: flex;
+  justify-content: center !important;
+}
+
+.navbar-dark {
+  background-color: #005899;
+}
+
+.carrito {
+  background-color: #1df8b2;
+  border-radius: 50%;
+  margin: 15px;
+  padding: 10px 10px;
+}
+
+.jumbotron {
+  background-image: url(./img/fondo.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: #1df8b2;
+  border-radius: 0;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 10px #000;
+}
+.jumbotron h1 {
+  font-size: 50px;
+  font-family: "Amaranth", sans-serif;
+}
+.jumbotron p {
+  font-size: 35px;
+  font-family: "Amaranth", sans-serif;
+}
+
+.btn-primary {
+  background-color: #005899;
+  color: #1df8b2;
+  font-size: 20px;
+  font-family: "Amaranth", sans-serif;
+}
+.btn-primary .btn-primary:hover {
+  background-color: #0066ff;
+}
+
+.container-fluid {
+  overflow: hidden;
+}
+
+.al {
+  padding: 0;
+  content: url(../assets/img/camionmarvar.png);
+  border: groove 4px #005899;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  -webkit-animation: rebotar;
+          animation: rebotar;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+@-webkit-keyframes rebotar {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    transform: translateY(150px);
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+}
+@keyframes rebotar {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    transform: translateY(150px);
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+}
+
+.ar {
+  color: #005899;
+}
+.ar h3 {
+  text-align: center;
+  color: #005899;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Amaranth", sans-serif;
+}
+.ar p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Amaranth", sans-serif;
+}
+.ar p::-moz-selection {
+  color: #005899;
+  background-color: #000;
+}
+.ar p::selection {
+  color: #005899;
+  background-color: #000;
+}
+
+.map {
+  width: 100%;
+  height: 50vh;
+  margin: 0px;
+}
+
+h1::-moz-selection {
+  color: #1df8b2;
+  background-color: #000;
+}
+
+h1::selection {
+  color: #1df8b2;
+  background-color: #000;
+}
+
+h2::-moz-selection, .alcon .ubicacion h3::-moz-selection {
+  color: #1df8b2;
+  background-color: #000;
+}
+
+h2::selection, .alcon .ubicacion h3::selection {
+  color: #1df8b2;
+  background-color: #000;
+}
+
+h3::-moz-selection {
+  color: #1df8b2;
+  background-color: #000;
+}
+
+h3::selection {
+  color: #1df8b2;
+  background-color: #000;
+}
+
+h4::-moz-selection {
+  color: #005899;
+  background-color: #000;
+}
+
+h4::selection {
+  color: #005899;
+  background-color: #000;
+}
+
+label::-moz-selection {
+  color: #005899;
+  background-color: #000;
+}
+
+label::selection {
+  color: #005899;
+  background-color: #000;
+}
+
+p::-moz-selection {
+  color: #005899;
+  background-color: #000;
+}
+
+p::selection {
+  color: #005899;
+  background-color: #000;
+}
+
+.row {
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+}
+
+.card {
+  background-color: #1df8b2;
+  padding: 0%;
+  text-align: center;
+  margin: 0px;
+  margin-top: 0px;
+}
+.card .card-body {
+  margin: 0;
+}
+.card h5 {
+  color: #005899;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Amaranth", sans-serif;
+}
+.card p {
+  color: #005899;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Amaranth", sans-serif;
+}
+.card .logos {
+  height: 50vh;
+  width: 100%;
+  -webkit-animation: rebotar;
+          animation: rebotar;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+@keyframes rebotar {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    transform: translateY(150px);
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+}
+.card .krach {
+  padding: 10vh;
+  height: 60vh;
+  width: auto;
+  display: flex;
+  align-self: center;
+}
+.card .krach:hover {
+  transform: rotateZ(20deg);
+  transition: all 0.8s;
+}
+.card .hispanos:hover {
+  transform: rotateZ(20deg);
+  transition: all 0.8s;
+}
+.card .macritas:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+}
+.card .arrocitas:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+}
+.card .natura {
+  padding: 20px;
+  height: 40vh;
+  width: auto;
+  display: flex;
+  align-self: center;
+}
+.card .natura:hover {
+  transform: rotateZ(20deg);
+  transition: all 0.8s;
+  height: 30vh;
+  display: flex;
+  align-self: center;
+}
+.card .crisjor {
+  padding: 70px;
+  height: 60vh;
+  width: auto;
+  display: flex;
+  align-self: center;
+}
+.card .crisjor:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+}
+.card .inysa {
+  padding: 10vh;
+  width: auto;
+  height: 40vh;
+  display: flex;
+  align-self: center;
+}
+.card .inysa:hover {
+  transform: rotateZ(20deg);
+  transition: all 0.8s;
+}
+.card .sol {
+  padding: 10vh;
+  height: 60vh;
+  width: auto;
+}
+.card .sol:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+}
+
+.modal-container {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: #1df8b2;
+  background-color: #005899;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1df8b2;
+  color: #005899;
+  width: 100%;
+}
+
+.modal-header-title {
+  justify-self: start;
+}
+
+.modal-header-button {
+  cursor: pointer;
+}
+
+.modal-container > .modal-content {
+  background-color: #005899;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+.modal-container > .modal-content .card-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.modal-container > div > img {
+  height: 10%;
+  width: 10%;
+}
+
+.total-content {
+  background-color: #005899;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.delete-product {
+  cursor: pointer;
+}
+
+.cantidad-carrito {
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
+
+.sumar {
+  cursor: pointer;
+}
+
+.restar {
+  cursor: pointer;
+}
+
+.alcon {
+  padding: 0px;
+}
+.alcon .contacto {
+  padding: 0px;
+  width: 100%;
+  height: 30em;
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: rebotar;
+          animation: rebotar;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+@keyframes rebotar {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    transform: translateY(150px);
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+}
+.alcon .ubicacion {
+  padding: 50px;
+  color: #005899;
+  font-family: "Amaranth", sans-serif;
+}
+.alcon .ubicacion p {
+  font-size: 20px;
+}
+.alcon .ubicacion .icon {
+  font-size: 20px;
+  display: inline-block;
+}
+.alcon .ubicacion .map {
+  padding: 0px;
+  width: 100%;
+  height: 70vh;
+  border: groove #005899 5px !important;
+}
+.alcon .ubicacion h3 {
+  font-size: 35px !important;
+}
+
+.arcon, .arser {
+  color: #005899;
+  font-weight: 600;
+}
+.arcon h3, .arser h3 {
+  text-align: center;
+  font-family: "Amaranth", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+.arcon p, .arser p {
+  text-align: left;
+  font-family: "Amaranth", sans-serif;
+  font-size: 30px;
+}
+
+.form-contacto {
+  margin: 50px;
+  font-size: 20px;
+  color: #005899 !important;
+}
+.form-contacto .form-control {
+  width: 100%;
+  height: 8vh;
+  font-size: 24px;
+  color: #005899;
+}
+.form-contacto textarea {
+  width: 100%;
+  color: #005899;
+}
+.form-contacto input {
+  color: #005899;
+}
+
+.alser {
+  padding: 0%;
+  content: url(./img/servicios.jpg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: rebotar;
+          animation: rebotar;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+@keyframes rebotar {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    transform: translateY(150px);
+    box-shadow: 0px 10px 10px 10px #000;
+  }
+}
+
+.form-is {
+  padding: 10%;
+}
+
+.form-group {
+  color: #005899;
+  font-weight: bold;
+  font-family: "Amaranth", sans-serif;
+  font-size: 30px;
+}
+
+.form-control {
+  width: 80%;
+}
+
+footer {
+  background-color: #1df8b2;
+  background-image: linear-gradient(155deg, #1df8b2 0%, #0066ff 50%, #0066ff 100%);
+  width: 100%;
+  text-align: center;
+  color: #1effb8;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  padding: 25px;
+}
+
+.logomarvar:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+}
+
+.grupo-1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 45px 0px;
+}
+.grupo-1 .box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grupo-1 .box h3 {
+  letter-spacing: 2px;
+}
+.grupo-1 .box p {
+  margin-bottom: 5px;
+}
+.grupo-1 .redes {
+  font-size: 35px;
+  padding-left: 150px;
+  letter-spacing: 8px;
+  line-height: 60px;
+}
+.grupo-1 .redes a {
+  color: #1df8b2;
+}
+.grupo-1 .redes a:hover {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.8s;
+}
+.grupo-1 .grupo-2 {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.subir {
+  height: 45px;
+  width: 45px;
+  background-color: #005899;
+  color: #1df8b2;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  font-size: 22px;
+}
+
+.subir:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .inysa {
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  .logos {
+    height: 40vh;
+  }
+  .krach {
+    height: 90vh;
+  }
+  .crisjor {
+    height: 70vh;
+  }
+  .contacto {
+    height: 25em;
+  }
+  .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px 0px;
+    text-align: center;
+  }
+  .grupo-1 .box {
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+  .grupo-1 .redes {
+    padding-left: 15px;
+    padding-top: 35px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-link {
+    font-size: 16px;
+    padding: 15px !important;
+  }
+  .al {
+    height: 90vh;
+  }
+  .card .krach {
+    height: 60vh;
+    width: auto;
+  }
+  .contacto {
+    height: 25em;
+  }
+  .alcon {
+    display: flex;
+    flex-direction: column;
+  }
+  .alcon .ubicacion {
+    padding: 10px;
+    margin: 0px;
+  }
+  .alcon .map {
+    margin: 0%;
+    height: 50vh;
+    width: 100%;
+  }
+  .alser {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .al {
+    height: 60vh;
+  }
+  .card .logos {
+    height: 60vh;
+  }
+  .card .krach {
+    height: 60vh;
+    width: auto;
+  }
+  .card .crisjor {
+    height: 80vh;
+  }
+  .card .inysa {
+    height: 50vh;
+  }
+  .card .sol {
+    padding: 100px;
+    height: 90vh;
+    width: auto;
+  }
+  .contacto {
+    height: 18em;
+  }
+  .map {
+    height: 45vh;
+  }
+  .alser {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  .al {
+    height: 50vh;
+  }
+  .card .krach {
+    height: 50vh;
+    width: auto;
+  }
+  .card .crisjor {
+    height: 70vh;
+  }
+  .card .inysa {
+    height: 40vh;
+  }
+  .card .sol {
+    height: 70vh;
+  }
+  .contacto {
+    height: 16em;
+  }
+  .ubicacion .icon {
+    display: flex;
+    flex-direction: column;
+  }
+  .ubicacion p {
+    font-size: 18px !important;
+  }
+  .ubicacion .map {
+    height: 40vh;
+  }
+  .alser {
+    height: 60vh;
+  }
+}/*# sourceMappingURL=style.css.map */
