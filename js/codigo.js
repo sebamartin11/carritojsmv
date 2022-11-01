@@ -71,9 +71,9 @@ function productosHispanos() {
                 (`${producto.id}`);
             }
             agregarAlCarrito(producto);
-            
-        })
-    })
+            carritoCounter();
+        });
+    });
 };
 productosHispanos();
 

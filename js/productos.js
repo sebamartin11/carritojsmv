@@ -22,7 +22,7 @@ const krach = [
         precio: 128,
         img:
             "./assets/img/corteamericano.png",
-            cantidad: 1,
+        cantidad: 1,
     },
     {
         id: 4,

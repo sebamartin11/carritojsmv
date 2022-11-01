@@ -692,6 +692,9 @@ footer {
     height: 60vh;
     width: auto;
   }
+  .card .hispanos {
+    padding: 15vh;
+  }
   .card .crisjor {
     height: 80vh;
   }
@@ -711,6 +714,16 @@ footer {
   }
   .alser {
     height: 80vh;
+  }
+  .modal-container {
+    width: 70%;
+    font-size: 16px !important;
+  }
+  .modal-content .card-title {
+    font-size: 18px;
+  }
+  .modal-content .card-text {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 320px) {
