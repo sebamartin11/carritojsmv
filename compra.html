@@ -2,34 +2,39 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="../assets/img/logomarvarsnacks.png" type="image/x-icon">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/style.css" />
-<link rel="stylesheet" href="../assets/stylecarrito.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/img/logomarvarsnacks.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/stylecarrito.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
 
-<script type="text/javascript">
-    emailjs.init('-syjWzwCaU1fPLsxD')
-</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('-syjWzwCaU1fPLsxD')
+    </script>
     </body>
-    <title>Marvarsnacks</title>
+    <title>MarvarSnacks</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar ">
+        <nav class="navbar navbar-light bg-dark min-vw-100">
             <a class="navbar-brand logomarvar" href="./index.html"></a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal">
+                    <a class="nav-link " data-bs-toggle="modal" data-bs-target="#modal">
                         <i class="bi bi-cart mx-3" id="carritoContenedor">0</i>
                     </a>
                 </li>
@@ -38,7 +43,7 @@
         </nav>
     </header>
 
-    <button id="activarFuncion" class="btn btn-secondary boton mt-2"></button>
+    <button id="activarFuncion" class="btn btn-secondary boton"></button>
 
     <main>
         <div class="container">
@@ -47,7 +52,7 @@
                     <h3 class="title-compra">Realizar Compra</h3>
                     <form id="procesar-pago" method="POST">
                         <div class="form-group row">
-                            <label for="cliente" class="col-12 col-md-2 col-form-label ">Cliente:</label>
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente:</label>
                             <div class="col-12 col-md-10">
                                 <input type="text" class="form-control" id="persona"
                                     placeholder="Ingresa nombre cliente" name="persona">
@@ -55,13 +60,14 @@
                         </div>
                         <br>
                         <div class="form-group row">
-                            <label for="email" class="col-12 col-md-2 col-form-label ">Correo :</label>
+                            <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
                             <div class="col-12 col-md-10">
-                                <input type="text" id="correo" class="form-control" name="email.id" id="email.id" placeholder="tuemail@ejemplo.com">
+                                <input type="text" id="correo" class="form-control" name="email.id" id="email.id"
+                                    placeholder="tuemail@ejemplo.com">
                             </div>
                         </div>
                         <br>
-                        <div id="carrito" class="form-group table-responsive">
+                        <div id="carrito" class="form-group">
                             <table class="table" id="lista-compra">
                                 <thead>
                                     <tr>
@@ -120,21 +126,26 @@
     </script>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
 
     <!-- sweet alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
     </script>
 
     <!--  Javascript  -->
     <script src="./js/codigo.js"></script>
-
+    <script src="./js/bootstrap.bundle.min.js"></script>
 
 </html>
