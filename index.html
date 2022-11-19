@@ -4,118 +4,70 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Distribuidora de snacks y condimentos gastronómicos para clientes mayoristas y minoristas">
-    <meta name="keywords" content="krachitos, 5 hispanos, macritas, arrocitas, natura, crisjor, inysa, sol de junio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/img/logomarvarsnacks.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/stylecarrito.css"/>
+    <link rel="stylesheet" href="./assets/style.css"/>
+
     <title>MarvarSnacks</title>
 </head>
+
 <body>
     <header>
-        <!-- navbar inicia -->
-        <nav class="navbar navbar-expand-md navbar-dark bgnav">
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Brand -->
-            <a class="navbar-brand logomarvar" href="../index.html"></a>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./iniciarsesion.html">Iniciar Sesión</a>
-                    </li>
-                </ul>
-            </div>
-            <button id="verCarrito" class="carrito">🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></button>
+        <nav class="navbar navbar-light bg-dark min-vw-100">
+            <a class="navbar-brand logomarvar" href="./index.html"></a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                        <i class="bi bi-cart mx-3" id="carritoContenedor">0</i>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <!-- navbar fin -->
     <main>
-        <!-- jumbotron Inicia -->
-        <div class="jumbotron">
-            <h1>Distribuidora Marvar</h1>
-            <p>Distribuidora de alimentos</p>
-            <a href="#"><button type="button" class="btn btn-primary">Nuestros Productos</button></a>
-        </div>
-        <!-- jumbotron Fin -->
-        <!-- Productos Inicia -->
-        <!-- Productos krachitos inicia-->
-        <h2 id="krachitos">Nuestros Productos</h2>
-        <section class="container-fluid">
-            <div  id="krach" class="row"></div>
-        </section>
-        <!-- Productos krachitos fin  -->
-        <!-- Productos 5 hispanos inicia -->
-        <h2 id="5hispanos">5 Hispanos</h2>
-        <section class="container-fluid">
-            <div id ="cafeHispanos" class="row"></div>
-        </section>
-        <!-- Productos 5 hispanos fin--> 
-        <!-- Productos macritas inicia -->
-        <h2 id="macritas">Macritas</h2>
-        <section class="container-fluid">
-            <div id="shopContent" class="row"></div>
-        </section>
-        <!-- productos macritas fin -->
-        <!-- productos arrocitas inicia -->
-        <h2 id="arrocitas">Arrocitas</h2>
-        <section class="container-fluid">
-            <div id="shopContent" class="row"></div>
-        </section>
-            <!-- productos arrocitas fin -->
-            <!-- productos natura inicia -->
-        <h2 id="natura">Natura</h2>
-        <section class="container-fluid">
-            <div id="shopContent" class="row"></div>
-        </section>
-        <!-- productos natura fin -->
-        <!-- productos Crisjor inicia -->
-        <h2 id="crisjor">Cris-jor</h2>
-        <section class="container-fluid">
-            <div id="shopContent" class="row"></div>
-        </section>
-        <!-- Productos crisjor Fin -->
-        <!-- productos Inysa inicia -->
-        <h2 id="inysa">Inysa</h2>
-        <section class="container-fluid">
-            <div id="shopContent" class="row"></div>
-        </section>
-        <!-- productos Inysa fin -->
-        <!-- Productos Sol de junio Inicia -->
-        <h2 id="soldejunio">Sol De Junio</h2>
-        <section class="container-fluid">
-            <div id="shopContent" class="row"></div>
-            <!-- Productos Sol de junio FIN -->
-        </section>
-        <!-- Productos Fin -->
-        <!-- Modal Container Inicia -->
-        <section class="container-fluid">
-            <div id="modal-container" class="modal-container"></div>
-        </section>
-        
-        <!-- Modal Container Fin -->
+                <!-- jumbotron Inicia -->
+                <div class="jumbotron">
+                    <h1>Distribuidora Marvar</h1>
+                    <p>Distribuidora de alimentos</p>
+                    <a href="#"><button type="button" class="btn btn-primary">Nuestros Productos</button></a>
+                </div>
+                <!-- jumbotron Fin -->
+        <h2 class="title-3">Nuestros Productos</h2>
+        <p class="preciodolar"></p>
+        <div class="row mt-5" id="contenedor"></div>
     </main>
+
+    <div class="container-xl">
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Carrito</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="close">X</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" id="vaciarCarrito">Vaciar carrito</button>
+                        <button type="button" id="procesarCompra" class="btn btn-primary">Continuar compra</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <span>Precio Total: $</span>
+                        <p class="text-center" id="precioTotal">$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer inicia -->
     <footer>
         <div class="grupo-1">
@@ -148,22 +100,35 @@
     <a href="#" class="subir">
         <i class="fa-sharp fa-solid fa-angle-up"></i>
     </a>
+
+    <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
-    <script src="./js/productos.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+
+    <!--  Javascript  -->
     <script src="./js/codigo.js"></script>
     <script src="./js/carrito.js"></script>
 </body>
+
 </html>

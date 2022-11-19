@@ -28,7 +28,7 @@ html{
 // css body
 body{
     background-color: $color1;
-    h2{
+    .title-3{
         background-color: $color2;
         text-align: center;
         color: $color1;
@@ -64,8 +64,9 @@ body::-webkit-scrollbar-thumb{
 
 .navbar-brand{
     content: url(./img/logomarvarsnacks.png);
+    margin-left: 25px;
     display: flex;
-    justify-content: center !important;
+    justify-content: center;
 }
 .navbar-dark{
     background-color: $color2;
@@ -86,6 +87,7 @@ body::-webkit-scrollbar-thumb{
     color: $color1;
     border-radius: 0;
     font-weight: bold;
+    padding: 50px;
     margin: 0;
     text-shadow: 0 0 10px $color5;
     h1{
@@ -93,16 +95,30 @@ body::-webkit-scrollbar-thumb{
         font-family: 'Amaranth', sans-serif;
     }
     p{
+        color: #1df8b2;
         font-size: $size3;
         font-family: 'Amaranth', sans-serif;
     }
 }
 // css botones
+.btn-secondary{
+    margin: 10px;
+    border-radius: 30px 30px;
+}
+.btn-success{
+    margin: 15px;
+    border-radius: 30px 30px;
+}
+.btn-danger{
+    margin: 10px;
+    border-radius: 20px 20px;
+}
 .btn-primary{
     background-color: $color2;
     color: $color1;
-    font-size: $size6;
+    // font-size: $size7;
     font-family: 'Amaranth', sans-serif;
+    border-radius: 30px 30px;
     .btn-primary:hover{
         background-color: $color7;
     }
@@ -230,8 +246,8 @@ p::selection{
         }
     }
     .krach{
-        padding: 10vh;
-        height: 60vh;
+        padding: 17vh;
+        height: 65vh;
         width: auto;
         display: flex;
         align-self: center;
@@ -243,6 +259,11 @@ p::selection{
     .hispanos:hover{
         transform: rotateZ(20deg);
         transition: all 0.8s;
+    }
+    .macritas{
+        padding: 100px 30px;
+        height: 70vh;
+        width: auto;
     }
     .macritas:hover{
         transform: scale(1.1);
@@ -322,14 +343,20 @@ p::selection{
     display: flex;
     justify-content: space-around;
     background-color: $color1;
-    color: $color2;
+    border-radius: $color1;
     width: 100%;
 }
 .modal-header-title{
     justify-self: start;
+    font-size: 30px;
+    border-radius: 100px 100px;
+    padding: 10px 10px;
 }
 .modal-header-button{
+    border-radius: 70%;
+    padding: 0 10px;
     cursor: pointer;
+    font-size: 30px;
 }
 .modal-container > .modal-content{
     background-color: $color2;
@@ -365,18 +392,13 @@ p::selection{
     color: $color4;
     border-radius: 50%;
     font-size: 12px;
-    padding: 4px;
+    padding: 0 5px;
     top: 37px;
     right: 14px;
     position: absolute;
     display: none;
 }
-.sumar{
-    cursor: pointer;
-}
-.restar{
-    cursor: pointer;
-}
+
 // aside left contactos.html
 .alcon{
     padding: 0px;
@@ -536,9 +558,9 @@ footer{
     line-height: 60px;
         a{
             color: $color1;
+            text-decoration: none ;
         }
         a:hover{
-            text-decoration: none;
             color: #fff;
             transition: all 0.8s;
         }
@@ -694,6 +716,11 @@ footer{
             height: 50vh;
             width: auto;
         }
+        .hispanos{
+            padding: 5vh;
+            height: 50vh;
+            width: auto;
+        }
         .crisjor{
             height: 70vh;
         }
@@ -701,7 +728,7 @@ footer{
             height: 40vh;
         }
         .sol{
-            height: 70vh;
+            height: 60vh;
         }
     }
     .contacto{
