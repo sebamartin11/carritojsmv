@@ -11,8 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/stylecarrito.css" />
 <link rel="stylesheet" href="../assets/style.css" />
+<link rel="stylesheet" href="../assets/stylecarrito.css" />
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -25,11 +25,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-light bg-dark min-vw-100">
+        <nav class="navbar ">
             <a class="navbar-brand logomarvar" href="./index.html"></a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal">
                         <i class="bi bi-cart mx-3" id="carritoContenedor">0</i>
                     </a>
                 </li>
@@ -47,7 +47,7 @@
                     <h3 class="title-compra">Realizar Compra</h3>
                     <form id="procesar-pago" method="POST">
                         <div class="form-group row">
-                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente:</label>
+                            <label for="cliente" class="col-12 col-md-2 col-form-label ">Cliente:</label>
                             <div class="col-12 col-md-10">
                                 <input type="text" class="form-control" id="persona"
                                     placeholder="Ingresa nombre cliente" name="persona">
@@ -55,7 +55,7 @@
                         </div>
                         <br>
                         <div class="form-group row">
-                            <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                            <label for="email" class="col-12 col-md-2 col-form-label ">Correo :</label>
                             <div class="col-12 col-md-10">
                                 <input type="text" id="correo" class="form-control" name="email.id" id="email.id" placeholder="tuemail@ejemplo.com">
                             </div>
