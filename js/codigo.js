@@ -604,6 +604,8 @@ const mostrarCarrito = () => {
             </div>
         </div>
         `;
+
+        
         // variable y evento para boton restar cantidades
         let restar = modalBody.querySelector(".restar");
     
@@ -625,8 +627,7 @@ const mostrarCarrito = () => {
             }) 
         });
     }
-
-    // si el carrito queda vacio aviso de que no agrego ningun producto
+        // si el carrito queda vacio aviso de que no agrego ningun producto
     if (carrito.length === 0) {
         modalBody.innerHTML = `
         <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
@@ -703,7 +704,7 @@ function enviarCompra(e) {
         const serviceID = "default_service";
         const templateID = "template_fmk9fth";
 
-        email.sendForm(serviceID, templateID, this).then(
+        emailjs.sendForm(serviceID, templateID, this).then(
             () => {
                 btn.value = "Finalizar compra";
                 Swal.fire({
